@@ -1,69 +1,53 @@
-# React + TypeScript + Vite
+# Ai‑Chat Chrome Extension 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bring AI-powered chat to any website — without switching tabs.
 
-Currently, two official plugins are available:
+## 📄 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This Chrome extension integrates OpenAI’s GPT models (GPT‑3.5 and GPT‑4) directly into your browser. It provides a floating popup where you can chat, summarize content, ask questions, and get instant help on any webpage.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🧠 Chat with GPT-3.5 or GPT-4 from any site
+- 🔑 Store and manage your OpenAI API key securely
+- 💬 Summarize text or ask questions instantly
+- 📎 Copy or download responses easily
+- ⚙️ Minimal and responsive popup UI
+- ⚡ Fast setup, no server required
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 1. Clone the Repository
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/dipayan1506/Ai-chat_chrome_extension.git
+cd Ai-chat_chrome_extension
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+###  2. Install Dependencies
+```bash
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+npm install
 ```
+### 3. Build the Extension
+```bash
+npm run build
+```
+
+ ### 4. Load into Chrome
+  1. Open chrome://extensions
+  2.  Enable Developer mode
+  3.  Click Load unpacked
+  4.  Select the dist/ folder
+
+### 5. Set Your API Key
+
+ 1. Click the extension icon in Chrome
+ 2. Go to Options
+ 3. Paste your OpenAI API key
+ 4. Save and start chatting!
+
+
+
+### 📝 License
+This project is licensed under the MIT License.
